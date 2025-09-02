@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #ffd100;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill-rule: evenodd;
+        opacity: .08;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="53.135" y1="15.758" x2="-2.615" y2="82.008" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00c4bb"/>
+      <stop offset="1" stop-color="#009185"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="56.112" y1="16.122" x2="14.782" y2="40.599" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#009695"/>
+      <stop offset="1" stop-color="#005e5d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="53.601" y1="25.609" x2="17.43" y2="47.03" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e2e2e2"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6"/>
+  <g id="Layer_5" data-name="Layer 5">
+    <path class="cls-5" d="M56.735,20.264L4.893,23.889c-.565,.184-.968,.72-.924,1.348l.329,4.708h-.004l.419,5.986h.004l.334,4.775,.39,5.572,.206,2.952,.533,7.619c.002,.027,.012,.052,.015,.078,.063,.523,.514,.918,1.036,.881l51.91-3.63c.398-.028,.724-.299,.852-.66,.037-.14,.067-.284,.056-.437l-.23-3.285-.672-9.611-.399-5.707-.91-13.009c-.044-.628-.518-1.103-1.102-1.206Z"/>
+    <path class="cls-4" d="M61.985,19.035H10.015c-.576,.144-1.015,.651-1.015,1.28v31.689c0,.027,.008,.052,.01,.079,.026,.526,.449,.951,.972,.951H62.018c.399,0,.743-.248,.896-.599,.047-.137,.086-.279,.086-.432V20.316c0-.629-.439-1.137-1.015-1.28Z"/>
+    <g id="icon-betaalpas">
+      <rect class="cls-2" x="8.996" y="25.035" width="54" height="6"/>
+      <rect class="cls-1" x="11.996" y="34.035" width="48" height="4"/>
+      <circle class="cls-3" cx="15.496" cy="45.535" r="3.5"/>
+    </g>
+  </g>
+  <g id="Layer_9" data-name="Layer 9"/>
+  <g id="Layer_3" data-name="Layer 3"/>
+  <g id="Layer_4" data-name="Layer 4"/>
+  <g id="Layer_7" data-name="Layer 7"/>
+</svg>

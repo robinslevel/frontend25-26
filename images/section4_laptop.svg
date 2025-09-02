@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #ffd100;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        opacity: .08;
+      }
+
+      .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-6 {
+        fill: #009185;
+        opacity: .3;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="58.833" y1="11.147" x2="33.263" y2="36.852" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#009695"/>
+      <stop offset="1" stop-color="#005e5d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="52.476" y1="18.055" x2="18.809" y2="51.722" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00c4bb"/>
+      <stop offset="1" stop-color="#009185"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="54.969" y1="31.339" x2="33.723" y2="52.697" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6"/>
+  <g id="Layer_5" data-name="Layer 5">
+    <path class="cls-5" d="M56.883,50.293l-2.024-28.943c-.077-1.094-1.026-1.919-2.12-1.843l-43.921,3.071c-1.094,.077-1.919,1.026-1.843,2.12l2.024,28.943-6.983,.488,.138,1.978c.078,1.111,1.041,1.949,2.153,1.871l57.825-4.044c1.111-.078,1.949-1.041,1.871-2.153l-.138-1.978-6.983,.488Z"/>
+    <path class="cls-4" d="M13.986,18H58.014c1.096,0,1.986,.89,1.986,1.986v29.049H12V19.986c0-1.096,.89-1.986,1.986-1.986Z"/>
+    <rect class="cls-2" x="13.996" y="20.035" width="44" height="29"/>
+    <polygon class="cls-6" points="47.996 20 13.996 20 13.996 48.035 18.996 48.035 47.996 20"/>
+    <path class="cls-1" d="M5,49h62v1.983c0,1.113-.904,2.017-2.017,2.017H7.017c-1.113,0-2.017-.904-2.017-2.017v-1.983h0Z"/>
+    <path class="cls-3" d="M28.996,49.035h13c0,1.104-.896,2-2,2h-9c-1.104,0-2-.896-2-2h0Z"/>
+  </g>
+  <g id="Layer_9" data-name="Layer 9"/>
+  <g id="Layer_3" data-name="Layer 3"/>
+  <g id="Layer_4" data-name="Layer 4"/>
+  <g id="Layer_7" data-name="Layer 7"/>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .08;
+      }
+
+      .cls-2 {
+        fill: #005e5d;
+      }
+
+      .cls-3 {
+        fill: #ffd100;
+      }
+
+      .cls-4 {
+        fill: rgba(0, 146, 134, .5);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-6 {
+        opacity: .2;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="56.507" y1="15.524" x2="17.072" y2="54.959" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00c5bc"/>
+      <stop offset="1" stop-color="#009286"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6"/>
+  <g id="Layer_5" data-name="Layer 5">
+    <path class="cls-1" d="M47.259,27.944l-12.808-11.134-17.954,1.255h-.002c-.138,.01-.271,.033-.399,.069-.484,.134-.883,.448-1.142,.855-.016,.025-.037,.047-.052,.073-.02,.034-.031,.073-.049,.108-.155,.31-.239,.66-.213,1.03v.005l2.232,31.917,.558,7.976c.077,1.104,1.034,1.938,2.137,1.86l27.928-1.953c1.11-.078,1.934-1.035,1.857-2.14l-2.09-29.894-.03-.026,.028-.002Z"/>
+    <g id="icon-paper-marker">
+      <path class="cls-5" d="M21.997,14.035c-1.112,0-2.002,.898-2.002,2.005V56.03c0,1.106,.896,2.005,2.002,2.005h27.996c1.112,0,2.002-.898,2.002-2.005V26.064l-12-12.028H21.997Z"/>
+      <g/>
+      <path class="cls-4" d="M39.996,14.064l-18-.028c-1.105,0-2,.895-2,2V48.035l26.168-27.804-6.168-6.168Z"/>
+      <path id="Rectangle-1" class="cls-2" d="M39.996,14.035l12,12h-9.991c-1.109,0-2.009-.902-2.009-2.022V14.035Z"/>
+    </g>
+    <g>
+      <polygon class="cls-1" points="52 36.299 41.536 46.763 38 50.299 38.044 54.586 38 54.542 36.586 55.956 38 57.37 39.414 55.956 39.458 56 43.657 55.956 47.192 52.42 52 47.613 52 36.299"/>
+      <rect class="cls-3" x="40.703" y="33.753" width="25" height="8" transform="translate(-11.113 48.678) rotate(-45)"/>
+      <polygon class="cls-2" points="38 47.299 38.044 51.586 38 51.542 36.586 52.956 38 54.37 39.414 52.956 39.458 53 43.657 52.956 47.192 49.42 41.536 43.763 38 47.299"/>
+      <rect class="cls-6" x="43.435" y="38.521" width="16" height="2" transform="translate(-12.88 47.945) rotate(-45)"/>
+    </g>
+  </g>
+  <g id="Layer_9" data-name="Layer 9"/>
+  <g id="Layer_3" data-name="Layer 3"/>
+  <g id="Layer_4" data-name="Layer 4"/>
+  <g id="Layer_7" data-name="Layer 7"/>
+</svg>
