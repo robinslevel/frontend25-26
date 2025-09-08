@@ -10,19 +10,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Robin Korkor
+## Myself
 
 <details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Robin korkor
+  Robin Korkor
 
   #### Je startniveau:
-  blauw
+  Blauw
 
   #### Je focus:
- Responsive
+  Responsive
  
 </details>
 
@@ -36,16 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://www.abnamro.nl/nl/prive/index.html voor de eerste pagina die ik ga maken.
-  Voor de tweede pagina ga ik: https://www.abnamro.nl/nl/prive/lenen/leningen/persoonlijke-lening/index.html maken.
+  link naar de website: https://robinslevel.github.io/frontend25-26/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina
-  <img src="readme-images/small/website_mobiel_iphone_xr.png" width="375px" alt="omschrijving van de pagina">
+  Home pagina 
+  <img src="readme-images/small/page2_mobile_light.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Persoonlijke-lening pagina 
-  <img src="readme-images/small/website_mobiel_iphone_xr_2.png" width="375px" alt="omschrijving van de pagina">
+ Persoonlijke-lening pagina 
+   <img src="readme-images/small/page2_mobile_light.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -66,17 +65,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
+pagina 1 https://www.barclays.co.uk 
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/small/page2_mobile_light.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/small/homepage_mobile_menu_dark.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
+pagina 2 https://www.barclays.co.uk/loans/car-loans/ 
 </details>
 
 
