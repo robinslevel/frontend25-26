@@ -79,3 +79,4 @@ ul :nth-of-type(2n){
   padding: 0;
 }
 
+/* Voor de tweede pagina is het wel handig om een id op de body te doen om beter aan te spreken in de css */
