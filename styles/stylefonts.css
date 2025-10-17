@@ -1,0 +1,68 @@
+/***********************/
+/* CSS fonts pagina 1 */
+/***********************/
+
+@font-face {
+    font-family:effrab_i;
+    src: url(../fonts/page1/effra-bold-italic.woff2);
+}
+
+@font-face {
+    font-family:effral_italic;
+    src: url(../fonts/page1/effra-light-italic.woff2);
+}
+@font-face {
+    font-family:effrab;
+    src: url(../fonts/page1/effra-bold.woff2);
+}
+
+@font-face {
+    font-family:effral;
+    src: url(../fonts/page1/effra-light.woff2);
+}
+
+@font-face {
+    font-family:effra-med-italic;
+    src: url(../fonts/page1/effra-medium-italic.woff2);
+}
+@font-face {
+    font-family:effra-medium;
+    src: url(../fonts/page1/effra-medium.woff2);
+}
+
+@font-face {
+    font-family:effra-regular-italic;
+    src: url(../fonts/page1/effra-regular-italic.woff2);
+}
+
+@font-face {
+    font-family:effra-regular;
+    src: url(../fonts/page1/effra-regular.woff2);
+}
+
+@font-face {
+    font-family:effra-regular;
+    src: url(../fonts/page1/effra-regular.woff2);
+}
+
+/***********************/
+/* CSS fonts pagina 2 */
+/***********************/
+@font-face {
+    font-family:barclays-icons-new;
+    src: url(../fonts/page1/barclays-icons-new.woff);
+}
+
+@font-face {
+    font-family:expert-sans-b14;
+    src: url(../fonts/page1/expert-sans-b14.woff2);
+}
+@font-face {
+    font-family:expert-sans-light;
+    src: url(../fonts/page1/expert-sans-light.woff2);
+}
+
+@font-face {
+    font-family:expert-sans-regular;
+    src: url(../fonts/page1/expert-sans-regular.woff2);
+}

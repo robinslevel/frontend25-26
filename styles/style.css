@@ -16,6 +16,8 @@
 	--login2: #005bbe;
 }
 
+
+
 /****.    Left curly bracket {: ⌥ Option + Shift + 8
 Right curly bracket }: ⌥ Option + Shift + 9.     ****/
 
@@ -26,7 +28,12 @@ Right curly bracket }: ⌥ Option + Shift + 9.     ****/
 }
 
 
-
+nav {
+	background-color: red;
+	margin-bottom: 1em;
+	display: flex;
+	max-height: 10vh;
+}
 
 
 
@@ -50,6 +57,7 @@ Right curly bracket }: ⌥ Option + Shift + 9.     ****/
 /* jouw code */
 
 /********nav********/
+/* version 2
 nav :first-of-type {
 	width: 100%;
 	background-color: white;
@@ -67,16 +75,326 @@ h1 :first-of-type {
 	height: 1em;
 	width: 1em;
 
-	/**hidden h1**/
+	/**hidden h1
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 }
+*/
 
-ul :nth-of-type(2n){
- list-style-type: none;
+header nav{
+  background-color: var(--login2);
+  max-height: 10vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 120px 1fr auto auto auto; /* logo | summary | taal | theme | menu */
+  grid-template-rows: 64px 56px;                  /* rij 1 (controls) | rij 2 (iconen) */
+  align-items: center;
+  column-gap: 1rem;
+  padding-inline: 1rem;
+}
+
+
+/* details plaatsing */
+header nav > details{
+  grid-column: 2;
+  grid-row: 1;
+
+  justify-self: start;
+  
+}
+/* Nederlandse flag */
+header nav > button:nth-of-type(1){ 
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center;
+}
+/* dark/light grid */
+
+header nav > button:nth-of-type(2){ 
+  grid-column: 4;
+  grid-row: 1;
+  justify-self: center;
+}
+/* menu menu */
+header nav > button:nth-of-type(3){ 
+  grid-column: 5;
+  grid-row: 1;
+  justify-self: end;
+}
+/* 2de rij plaatsing */
+header nav > ul:last-of-type{
+  grid-column: 3 / 6;  /* start kolom 3 eindigd kolom 6 */
+  grid-row: 2;         /* in de tweede rij */
+  justify-self: end;   
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 0;
   margin: 0;
-  padding: 0;
+  list-style: none;
+}
+header nav > ul li{ 
+	background: none; 
+}
+/* sizing laaastste svgs */
+header nav > ul:last-of-type svg{
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+/*header nav>ul li {
+	/* grid-row: 2 / 3; 
+	background-color: red;
+	flex-direction: column;
+}
+*/
+
+/* 2de ul */
+nav ul li {
+	list-style: none;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+nav ul li:nth-of-type(1) svg {
+	width: 3em;
+	height: 3em;
+	stroke: #005bbe;
+}
+
+
+
+/* styling svg */
+.st0 {
+	fill: #00AEEF;
+	width: 100px;
+	justify-self: center;
+	padding-top: 1px;
+}
+
+/* details */
+details {
+	color: dodgerblue;
+	z-index: 1;
+
+}
+
+nav a {
+	display: grid;
+}
+
+nav a svg {
+	align-self: center;
+	justify-self: left;
+	padding-right: 0;
+	width: 2.2em;
+}
+
+/* dot before the personal */
+summary::marker {
+	color: var(--headerl2);
+
+}
+/* margin: 1em; */
+summary {
+	width: 11em;
+	padding: 0.6em 2em 0.6em 2.7em;
+	border-color: black;
+	border-style: solid;
+	box-shadow: 0em 0em 0.1em lightgray;
+	border-radius: 50px;
+	background-color: white;
+	
+}
+
+details{
+margin-top: 1.05rem;
+}
+
+details:active {
+	/* transition-property: 45deg; */
+	color: red;
+	border-color: red;
+	display: block;
+
+}
+
+details ul {
+	z-index: 1;
+}
+
+details ul li {
+	color: #005bbe;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	text-decoration: underline;
+
+
+}
+
+details[open]::details-content {
+	color: var(--login);
+	padding: 0.5em;
+	border: var(--login);
+	/* transition: 1s; */
+	border-radius: 0;
+	color: red;
+	margin-top: 1rem;
+
+	background-color: white;
+}
+
+
+
+/* nederlandse taal buttono */
+header nav button:first-of-type {
+	background-color: var(--login2);
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	justify-content: center;
+	align-content: center;
+	padding: 10px;
+	width: 5.5em;
+	justify-self: center;	
+}
+/* animation nederlandse taal button */
+header nav button:first-of-type:hover{
+	background-color: white;
+	transition: 0.5s;
+}
+header nav button:first-of-type:active{
+	background-color: var(--login2);
+	transition: 0.5s;
+}
+
+
+/* button dark mode */
+nav button:nth-of-type(2) svg {
+	width: 3em;
+	height: 3em;
+}
+
+nav button:nth-of-type(2) {
+	background-color:var(--login2);
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+/*  */
+nav button:nth-of-type(2) svg {
+	fill: black;
+}
+/* button animatie is gelukt pas de kleuren aan en onclick css versie */
+nav button:nth-of-type(2) svg:active {
+	fill: white;
+	transition: 0.4s;
+}
+
+
+/* Menu button */
+/* menu rechterkant */
+header nav button:nth-of-type(3) {
+	appearance: none;
+	width: 3em;
+	aspect-ratio: 1;
+	font-size: 1em;
+	border: none;
+	background-color: white;
+	display: grid;
+	align-self: center;
+	margin-right: 10px;
+	justify-self: right;
+	padding: 0;
+}
+
+button span {
+	display: block;
+	width: 2.5em;
+	height: 0.2em;
+	background-color: var(--headerl2);
+	border-radius: 10em;
+	align-self: center;
+	justify-self: center;
+
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+nav button span:nth-of-type(1) {
+	translate: 0 -1em;
+	transition: 2s;
+}
+
+nav button span:nth-of-type(2) {
+	transition: 2s;
+}
+
+button span:nth-of-type(3) {
+	translate: 0 1em;
+	transition: 2s;
+}
+
+button.is-open span:nth-of-type(1) {
+	translate: 0 0;
+	rotate: -45deg;
+}
+
+button.is-open span:nth-of-type(2) {
+	scale: 0 1;
+}
+
+button.is-open span:nth-of-type(3) {
+	translate: 0 0;
+	rotate: 45deg;
+
+}
+
+button.is-open span:nth-of-type(4) p {
+	translate: 0 30;
+	color: var(--headerl2);
+
 }
 
 /* Voor de tweede pagina is het wel handig om een id op de body te doen om beter aan te spreken in de css */
+
+nav ul:nth-of-type(2){
+	display:flex;
+	flex-direction: row;
+	grid-column: -4 / -1;
+	grid-row:-2 / -1;
+	gap:1em;
+
+}
+
+nav ul:nth-of-type(1) svg{
+	width: .5em;
+}
+/* start section  1*/
+section:first-of-type {
+	background-color: rgb(0, 18, 118);
+	height: 75vh;
+	padding: 1rem;
+	border-width: 0.6em;
+	border-color: #00AEEF;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+	color: white;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(7, min-content);
+	padding-bottom:0;
+}
+main section p:nth-of-type(1){
+	text-transform: uppercase;
+
+}
+
+main section img{
+	width: 100%;
+}
