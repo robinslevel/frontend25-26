@@ -14,6 +14,14 @@
 	/* login button */
 	--login: #006de3;
 	--login2: #005bbe;
+	--bgsection1: rgb(0, 18, 118);
+	--bgsection2: #f6f6f6;
+
+	--pc2: #515151;
+	--h23: #272727;
+
+	--s4:#1a2142;
+	--footerspan:#E2E2E2;
 }
 
 
@@ -28,12 +36,6 @@ Right curly bracket }: ⌥ Option + Shift + 9.     ****/
 }
 
 
-nav {
-	background-color: red;
-	margin-bottom: 1em;
-	display: flex;
-	max-height: 10vh;
-}
 
 
 
@@ -46,109 +48,220 @@ nav {
 	--color-background: #eee;
 }
 
+@media (min-width: 768px) {
+	main section:first-of-type button {
+		display: inline-block;
+		width: auto;
+		margin-inline: 0.5rem;
+	}
+
+	main section:first-of-type a {
+		display: inline-block;
+		width: auto;
+	}
+
+	main>section:first-of-type {
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
 /***body***/
+body {
+	margin: 0;
+}
+abbr :active{
+   fill: white;
+	transition: 0.4s;
+}
+abbr :hover{
+color: black;
+  transform: scale(1.03); 
+}
 
+header {
+	padding: 0.7em 1.5em;
+}
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
-/********nav********/
-/* version 2
-nav :first-of-type {
-	width: 100%;
-	background-color: white;
-	max-height: 2em;
+header nav {
+	max-height: 10vh;
+	max-width: 100%;
 	display: grid;
-	display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
-
+	grid-template-columns: 2.5em 1fr auto auto auto;
+	grid-template-rows: 50px 32px;
+	align-items: center;
+	column-gap: 0.5em;
+	row-gap: 1.5em;
+	padding-inline: 1rem;
+	background-color: var(--bgc);
+}
+/* buttons & a links */
+a:active{
+ background-color: var(--login2); 
+  border-color: var(--login2);
+  transform: scale(0.98); 
+}
+a:hover{
+	transform: scale(1.05); 
 }
 
-h1 :first-of-type {
-	background-image: url(/images/page1/Eagle_RGB_Cyan_Large.svg);
-	height: 1em;
+
+button:active{
+	 background-color: var(--login2); 
+  border-color: var(--login2);
+  transform: scale(0.98); 
+}
+/* logo svg */
+button:hover{
+	transform: scale(1.05); 
+}
+.st0 {
+	fill: #00AEEF;
+	/* width: 1.875rem - 30x30px */
+	width: 1.875rem;
+	height: 1.875rem;
+	justify-self: center;
+	padding-top: 1px;
+}
+
+header nav>a:first-of-type {
+	grid-column: 1;
+	grid-row: 1;
+	align-self: center;
+	justify-self: start;
+}
+
+nav a svg {
+	align-self: center;
+	justify-self: left;
+	padding-right: 0;
+	width: 1.875em;
+}
+
+/* eerste button */
+header nav button:first-of-type {
+	background-color: white;
+	color: var(--headerl2);
+	border: 1px solid #ccc;
+	border-radius: 3.5rem;
+	padding: 0.4em 2em;
+	box-shadow: 0 0 0.1em lightgray;
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	cursor: pointer;
+	justify-self: start;
+	align-self: center;
+}
+main section:nth-of-type(2) ul li p{
+	color: var(--pc2);
+}
+h3{
+color: var(--h23);
+}
+
+header nav button:nth-of-type(1) svg {
 	width: 1em;
+	height: 1em;
+	transition: transform 0.3s ease;
 
-	/**hidden h1
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-*/
-
-header nav{
-  background-color: var(--login2);
-  max-height: 10vh;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 120px 1fr auto auto auto; /* logo | summary | taal | theme | menu */
-  grid-template-rows: 64px 56px;                  /* rij 1 (controls) | rij 2 (iconen) */
-  align-items: center;
-  column-gap: 1rem;
-  padding-inline: 1rem;
 }
 
-
-/* details plaatsing */
-header nav > details{
-  grid-column: 2;
-  grid-row: 1;
-
-  justify-self: start;
-  
+/* eerste button styling */
+header nav ul:nth-of-type(1) {
+	position: absolute;
+	top: 4em;
+	left: 3.5em;
+	background: white;
+	border-radius: 10px 10px 10px 10px;
+	list-style: none;
+	margin: 0;
+	padding: 1em;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
+	width: max-content;
+	z-index: 10;
 }
-/* Nederlandse flag */
-header nav > button:nth-of-type(1){ 
-  grid-column: 3;
-  grid-row: 1;
-  justify-self: center;
-}
-/* dark/light grid */
 
-header nav > button:nth-of-type(2){ 
-  grid-column: 4;
-  grid-row: 1;
-  justify-self: center;
+
+header nav ul:nth-of-type(1) li {
+	margin: 0.5em 0;
+	padding-bottom: 0.2em;
 }
+
+
+
+header nav ul:nth-of-type(1) a:hover {
+	color: var(--login);
+}
+
 /* menu menu */
-header nav > button:nth-of-type(3){ 
-  grid-column: 5;
-  grid-row: 1;
-  justify-self: end;
-}
-/* 2de rij plaatsing */
-header nav > ul:last-of-type{
-  grid-column: 3 / 6;  /* start kolom 3 eindigd kolom 6 */
-  grid-row: 2;         /* in de tweede rij */
-  justify-self: end;   
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-}
-header nav > ul li{ 
-	background: none; 
-}
-/* sizing laaastste svgs */
-header nav > ul:last-of-type svg{
-  width: 1.75rem;
-  height: 1.75rem;
+header nav>button:nth-of-type(3) {
+	grid-column: 5;
+	grid-row: 1;
+	justify-self: end;
 }
 
-/*header nav>ul li {
-	/* grid-row: 2 / 3; 
-	background-color: red;
-	flex-direction: column;
+/* 2de rij plaatsing */
+/* Make the 2nd-row list span full width and behave as a row */
+header nav>ul:last-of-type {
+	grid-column: 1 / -1;
+	grid-row: 2;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	padding: 0 1rem;
+	margin: 0;
+	list-style: none;
+	width: 100%;
 }
-*/
+
+header nav>ul:last-of-type li:last-child {
+	margin-left: auto;
+	/* 👈 pushes Log in to the right edge */
+}
+
+/* Size & vertically align icons */
+header nav>ul:last-of-type li {
+	display: inline-flex;
+	align-items: center;
+}
+
+header nav>ul:last-of-type svg {
+	width: 26px;
+	height: 26px;
+	display: block;
+	flex-shrink: 0;
+}
+
+header nav>ul:last-of-type svg * {
+	stroke: var(--headerl2) !important;
+	fill: none;
+	stroke-width: 2;
+}
+
+/* hover */
+header nav>ul:last-of-type a:hover svg * {
+	stroke: var(--login) !important;
+}
+
+/* Log in */
+header nav>ul:last-of-type li:last-child a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: .5em 1.1em;
+	background: var(--login);
+	color: #fff;
+	border-radius: 6.188em;
+	font-weight: 700;
+	text-decoration: none;
+	line-height: 1;
+}
+
+header nav>ul:last-of-type li:last-child a:hover {
+	background: var(--login);
+}
+
 
 /* 2de ul */
 nav ul li {
@@ -159,136 +272,40 @@ nav ul {
 	padding-left: 0;
 }
 
-nav ul li:nth-of-type(1) svg {
-	width: 3em;
-	height: 3em;
-	stroke: #005bbe;
-}
 
 
 
-/* styling svg */
-.st0 {
-	fill: #00AEEF;
-	width: 100px;
-	justify-self: center;
-	padding-top: 1px;
-}
 
-/* details */
-details {
-	color: dodgerblue;
-	z-index: 1;
 
-}
+
+
 
 nav a {
 	display: grid;
 }
 
-nav a svg {
-	align-self: center;
-	justify-self: left;
-	padding-right: 0;
-	width: 2.2em;
-}
-
-/* dot before the personal */
-summary::marker {
-	color: var(--headerl2);
-
-}
-/* margin: 1em; */
-summary {
-	width: 11em;
-	padding: 0.6em 2em 0.6em 2.7em;
-	border-color: black;
-	border-style: solid;
-	box-shadow: 0em 0em 0.1em lightgray;
-	border-radius: 50px;
-	background-color: white;
-	
-}
-
-details{
-margin-top: 1.05rem;
-}
-
-details:active {
-	/* transition-property: 45deg; */
-	color: red;
-	border-color: red;
-	display: block;
-
-}
-
-details ul {
-	z-index: 1;
-}
-
-details ul li {
-	color: #005bbe;
-	padding-top: 0.5em;
-	padding-left: 0.5em;
-	text-decoration: underline;
-
-
-}
-
-details[open]::details-content {
-	color: var(--login);
-	padding: 0.5em;
-	border: var(--login);
-	/* transition: 1s; */
-	border-radius: 0;
-	color: red;
-	margin-top: 1rem;
-
-	background-color: white;
-}
 
 
 
-/* nederlandse taal buttono */
-header nav button:first-of-type {
-	background-color: var(--login2);
-	display: inline-block;
-	cursor: pointer;
-	text-decoration: none;
-	border: none;
-	justify-content: center;
-	align-content: center;
-	padding: 10px;
-	width: 5.5em;
-	justify-self: center;	
-}
-/* animation nederlandse taal button */
-header nav button:first-of-type:hover{
-	background-color: white;
-	transition: 0.5s;
-}
-header nav button:first-of-type:active{
-	background-color: var(--login2);
-	transition: 0.5s;
-}
 
 
-/* button dark mode */
-nav button:nth-of-type(2) svg {
-	width: 3em;
-	height: 3em;
-}
+
+
+
+
 
 nav button:nth-of-type(2) {
-	background-color:var(--login2);
+	background-color: var(--login2);
 	text-decoration: none;
 	border: none;
 	cursor: pointer;
 }
+
 /*  */
 nav button:nth-of-type(2) svg {
 	fill: black;
 }
+
 /* button animatie is gelukt pas de kleuren aan en onclick css versie */
 nav button:nth-of-type(2) svg:active {
 	fill: white;
@@ -324,6 +341,7 @@ button span {
 	grid-column-start: 1;
 	grid-row-start: 1;
 }
+
 nav button span:nth-of-type(1) {
 	translate: 0 -1em;
 	transition: 2s;
@@ -361,24 +379,26 @@ button.is-open span:nth-of-type(4) p {
 
 /* Voor de tweede pagina is het wel handig om een id op de body te doen om beter aan te spreken in de css */
 
-nav ul:nth-of-type(2){
-	display:flex;
+nav ul:nth-of-type(2) {
+	display: flex;
 	flex-direction: row;
 	grid-column: -4 / -1;
-	grid-row:-2 / -1;
-	gap:1em;
+	grid-row: -2 / -1;
+	gap: 1em;
 
 }
 
-nav ul:nth-of-type(1) svg{
+nav ul:nth-of-type(1) svg {
 	width: .5em;
 }
+
 /* start section  1*/
-section:first-of-type {
+main>section:first-of-type {
+	display: grid;
+	row-gap: 0.5rem;
 	background-color: rgb(0, 18, 118);
-	height: 75vh;
 	padding: 1rem;
-	border-width: 0.6em;
+	border-width: 0.6em 0.8em;
 	border-color: #00AEEF;
 	border-style: solid;
 	display: flex;
@@ -388,13 +408,275 @@ section:first-of-type {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(7, min-content);
-	padding-bottom:0;
+	padding-bottom: 0;
 }
-main section p:nth-of-type(1){
-	text-transform: uppercase;
+
+main section:first-of-type p:nth-of-type(1) {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+}
+
+main section:first-of-type h2 {
+	margin-bottom: 0.2em;
+	margin-top: -0.1em;
+}
+
+main section:first-of-type a {
+	justify-self: center;
+	text-align: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--bgc);
+	width: 80%;
+	transition: all 0.3s ease;
+	margin-top: 1em;
+	color: var(--bgc);
+	text-decoration: none;
 
 }
 
-main section img{
+main section:first-of-type button {
+	justify-self: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--bgc);
+	width: 80%;
+	transition: all 0.3s ease;
+	margin-top: 1em;
+	color: var(--bgsection1);
+	text-decoration: none;
+
+}
+
+main>section:first-of-type img {
 	width: 100%;
+}
+
+main section:nth-of-type(2) {
+	display: grid;
+	padding: 1rem;
+
+}
+
+main section:nth-of-type(2) h2 {
+	justify-self: center;
+	text-align: center;
+color: var(--h23);
+}
+
+
+
+main section:nth-of-type(2) ul {
+	display: grid;
+	list-style: none;
+	padding-left: 0;
+	row-gap: 0.5em;
+	border-radius: 6.188em;
+
+}
+
+main section:nth-of-type(2) ul li {
+	display: grid;
+	gap: 0.5em;
+	list-style: none;
+	padding-left: 0;
+	background-color: var(--bgsection2);
+	padding: 1em;
+
+}
+
+main section:nth-of-type(2) ul li svg {
+	stroke: var(--headerl2);
+	width: 1.5em;
+	height: 1.5em;
+	grid-row-start: 1;
+}
+
+/* laatste svg is een beetje raar */
+main section:nth-of-type(2) ul li:last-of-type svg {
+	fill: var(--headerl2);
+}
+
+
+main > section:nth-of-type(2) h2 + p{
+	text-align: center;
+	color: var(--pc2);
+}
+/* buttons */
+main > section:nth-of-type(2) a{
+	justify-self: center;
+	text-align: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--headerl2);
+	width: 80%;
+	transition: all 0.3s ease;
+	margin-top: 1em;
+	color: var(--headerl2);
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+main section:nth-of-type(2) ul li :where(h3, p, a, button) {
+	margin: 0;
+}
+/* onclick */
+main > section:nth-of-type(2) a:hover {
+  background-color: var(--headerl2);
+  color: white;
+  transform: scale(1.03); 
+}
+/* geselecteerd */
+main > section:nth-of-type(2) a:active {
+  background-color: var(--login2); 
+  border-color: var(--login2);
+  transform: scale(0.98); 
+}
+
+main section:nth-of-type(3){
+	margin-top: 0;
+	padding-top: 0;
+	padding: 1rem;
+	display: grid;
+	list-style: none;
+	background-color:white ;
+}
+main section:nth-of-type(3) ul{
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+main > section:nth-of-type(3) li{
+	background-color: var();
+	display: grid;
+	margin-top: 1em;
+}
+main section:nth-of-type(3) li:nth-of-type(3) img:first-of-type {
+	width: 110%;
+	justify-self: center;
+}
+main section:nth-of-type(3) li:nth-of-type(1) img:last-of-type {
+	width: 100%;
+	justify-self: center;
+}
+main section:nth-of-type(3) h4{
+	display: flex;
+	margin: 0;
+	grid-template-rows: 0.75em;
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
+main section:nth-of-type(3) h4:nth-of-type(1){
+	margin-bottom: 1em;
+}
+main section:nth-of-type(3) h2{
+margin-left: 0.75em;
+	margin-right: 0.75em;
+	color: var(--h23);
+}
+main section:nth-of-type(3) p{
+margin-left: 0em;
+	margin-right: 0.75em;
+	margin-top: 0em;
+}
+
+
+main > section:nth-of-type(3) li:nth-of-type(3) h2{
+	grid-row: 2;
+	margin-left: 0;
+}
+main > section:nth-of-type(3) li:nth-of-type(2){
+	margin-top: 1em;
+}
+
+main > section:nth-of-type(3) a{
+	display: flex;
+	margin-left: 1.75em;
+	margin-right: 1.75em;
+	justify-self: center;
+	text-align: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--headerl2);
+	transition: all 0.3s ease;
+	margin-top: 0em;
+	color: var(--headerl2);
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+/* section 4 */
+
+main section:nth-of-type(4){
+	display: grid;
+	padding: 2rem;
+	justify-items: center;
+	background-color: var(--s4);
+	gap: 0.5em;
+}
+main section:nth-of-type(4) svg{
+	width: 7.5em;
+	height: 7.5em;
+	grid-row-start: 1;
+}
+main section:nth-of-type(4) a{
+	display: flex;
+	margin-left: 1.75em;
+	margin-right: 1.75em;
+	justify-self: center;
+	text-align: center;
+	padding: 0.9em 2em;
+	cursor: pointer;
+	border-radius: 6.188em;
+	border: 2px solid var(--bgc);
+	transition: all 0.3s ease;
+	margin-top: 0em;
+	color: var(--bgc);
+	text-decoration: none;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+}
+main section:nth-of-type(4) h2{
+	color: var(--bgc);
+	text-align: center;
+	margin: 0;
+
+}
+main section:nth-of-type(4) p{
+	color: var(--bgc);
+	text-align: center;
+	margin: 0;
+	margin-bottom: 0.9em;
+}
+
+/* footer */
+footer{
+	margin: 1em;
+}
+
+
+footer ul{
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+footer button{
+	border-style: none;
+	color: var(--pc2);
+	font-size: 16px;
+
+}
+footer section span{
+	height: 0.125em;
+	width: 100%;
+	height: 0.2em;
+	background-color: var(--footerspan);
+	display: flex;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }

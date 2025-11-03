@@ -57,6 +57,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Bevinding 1: h1 is niet op de juiste volgorde.
+  
 
 </details>
 
@@ -231,8 +233,9 @@ pagina 2 https://www.barclays.co.uk/loans/car-loans/
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. bron 1 deatails tag voor mijn nav : https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_details - https://www.w3schools.com/tags/tag_details.asp
+  2. grids - https://codepen.io/Robin-Korkor/pen/LEpwKMN
+  3. svg - https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element/svg
+4. ID op de body voor het vormgeving pagina 2 - Maaike
+5. Headings - H2 belangrijkste headings op de pagina h3 subkopjes en h4 verder. - Maaike
 </details>

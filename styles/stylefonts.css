@@ -40,10 +40,6 @@
     src: url(../fonts/page1/effra-regular.woff2);
 }
 
-@font-face {
-    font-family:effra-regular;
-    src: url(../fonts/page1/effra-regular.woff2);
-}
 
 /***********************/
 /* CSS fonts pagina 2 */
@@ -65,4 +61,136 @@
 @font-face {
     font-family:expert-sans-regular;
     src: url(../fonts/page1/expert-sans-regular.woff2);
+}
+h2{
+    font-size: 32px;
+    font-family: "effra-medium", Arial, Helvetica, sans-serif;
+}
+p{
+font-family: "effra-regular",Arial, Helvetica, sans-serif;
+}
+h4{
+    font-family: "effra-medium", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+abbr{
+    color: var(--headerl2);
+}
+a{
+   font-family: "effra-medium", Arial, Helvetica, sans-serif; 
+}
+header nav ul:nth-of-type(1) a{
+    color: var(--headerl2);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    font-family:"effra-medium", Arial, sans-serif ;
+}
+
+header nav button:first-of-type {
+    font-family:"effra-effrab_i", Arial, sans-serif ;
+     font-weight: 400;
+    font-size: 16px;
+}
+header nav > ul:last-of-type li:last-child a{
+    color: var(--bgc);
+    font-family:"effrab",Arial, Helvetica, sans-serif ;
+}
+
+/* section */
+main section:first-of-type p:nth-of-type(1){
+	/* text-transform: hoofdletters; */
+font-family:"effra-regular",Arial, Helvetica, sans-serif ;
+font-size: 14px;
+}
+
+/* section h2 */
+main section:first-of-type h2 {
+font-size: 3.125em;
+font-family: "effrab", Arial, Helvetica, sans-serif;
+}
+
+main section:first-of-type p:nth-of-type(2){
+	/* text-transform: hoofdletters; */
+font-family:"effra-regular",Arial, Helvetica, sans-serif ;
+font-size: 1rem;
+}
+
+/* section 1 buttons */
+main section:first-of-type a{
+    font-family: "effra-regular",Arial, Helvetica, sans-serif ;
+    font-size: 1rem;
+}
+main section:first-of-type button{
+    font-family: "effra-regular",Arial, Helvetica, sans-serif ;
+    font-size: 1rem;
+}
+/* section 2 */
+main section:nth-of-type(2) h2{
+    font-size: 2em;
+    font-family: "effrab", Arial, Helvetica, sans-serif;
+}
+main section:nth-of-type(2) p:first-of-type {
+      font-family: "effra-regular",Arial, Helvetica, sans-serif ;
+}
+
+main section:nth-of-type(2) ul h3{
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family:"effra-medium",Arial, Helvetica, sans-serif  ;
+}
+main section:nth-of-type(2) ul li p{
+    font-size: 1em;
+}
+main > section:nth-of-type(2) a{
+    font-family: "effra-regular",Arial, Helvetica, sans-serif;
+}
+
+
+
+/* footer */
+
+h5{
+    font-size: 16px;
+    color: var(--h23);
+margin: 0;
+margin-bottom: 0.7em;
+font-family: "effrab", Arial, Helvetica, sans-serif;
+font-size: 18px;
+}
+
+footer ul li a{
+    color: var(--h23);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer ul li a:active{
+     color: var(--headerl2);
+     transform: scale(1.03); 
+}
+/* all the links just go that color but why if they arent visited yet? */
+/* footer ul li a:visited{
+    color: var(--headerl2);
+} */
+ footer button{
+	color: var(--pc2);
+	font-size: 13px;
+	font-family: "effra-regular",Arial, Helvetica, sans-serif;
+    color: var(--headerl2);
+}
+footer h2{
+	font-size: 20px;
+}
+footer p{
+	color: var(--pc2);
+}
+footer ol li a{
+	font-size: 16px;
+    color: var(--headerl2);
+}
+
+footer ul:first-of-type{
+    padding-top: 1px;
+    border-color: red;
 }
